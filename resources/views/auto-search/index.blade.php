@@ -105,7 +105,7 @@
                                 $('#address').val(results.formatted_address);
 
                                 // Initialize zip code if an empty then we set default 123456
-                                // var zipCode = 123456;
+                                var zipCode = 123456;
 
                                 for (var i = 0; i < objects.length; i++) {
 
@@ -121,13 +121,13 @@
                                         $('#country').val(objects[i].long_name);
 
                                     } else if (type === 'postal_code') {
-                                        $('#zip').val(objects[i].long_name);
-                                        // zipCode = objects[i].long_name;
+                                        // $('#zip').val(objects[i].long_name);
+                                        zipCode = objects[i].long_name;
                                     }
                                 }
 
                                 // Set the zip code default
-                                // $('#zip').val(zipCode);
+                                $('#zip').val(zipCode);
                             } else {
                                 // we can handle error as well but for now I have display "no data found"
                                 console.log('No data found');
