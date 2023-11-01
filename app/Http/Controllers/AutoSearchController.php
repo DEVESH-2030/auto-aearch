@@ -27,7 +27,7 @@ class AutoSearchController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request);
+        //
     }
 
     /**
@@ -60,5 +60,10 @@ class AutoSearchController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function getDestination()
+    {
+        return view('destination.index');
     }
 }

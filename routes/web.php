@@ -24,6 +24,8 @@ Route::get('/', [AutoSearchController::class, 'index'])->name('auto-search.index
 Route::post('/save-location', [AutoSearchController::class, 'store'])->name('save-location');
 
 
+// added new feature to get destination
+Route::get('destination', [AutoSearchController::class, 'getDestination'])->name('destination');
 // Route::get('/', function () {
 //     return view('welcome');
 // });
