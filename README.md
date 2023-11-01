@@ -26,5 +26,4 @@
     - 1st is single search then set value in self input field
     - 2nd is auto search as per task details to set/append value into these input fields:
         - address, city, state, country, and postal_code (zip)
-        - postal code in not coming in data objects, So I have set default value as `123456` please check carefully if your are see `123456`, 
-        So understand that the postal code is not coming.
+        - If postal_code is not coming in data object then I have set static "123456" into the input field, and if postal_code comes then it will be set automatically please charefully
