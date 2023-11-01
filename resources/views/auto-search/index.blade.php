@@ -24,11 +24,11 @@
             @csrf
 
             {{-- this is a sengle input search for example --}}
-            <div class="mb-3 mt-6">
+            {{-- <div class="mb-3 mt-6">
                 <label for="address">Single Search Here:</label>
                 <input type="text" class="form-control" id="location">
             </div>
-            <br> <br>
+            <br> <br> --}}
 
 
             {{-- search and auto append data into input field --}}
